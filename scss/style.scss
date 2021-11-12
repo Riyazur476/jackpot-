@@ -1,0 +1,701 @@
+    /*
+1.Import Fonts Css
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+*/
+    /*==============================
+   ===Css Table of Content===
+================================*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700&display=swap');
+    /*===============================
+    ===Import Fonts Css Ends===
+=================================*/
+    
+    $col1: #ff39dc;
+    $col2: #944bff;
+    $col3: #a60084;
+    $col4: #ff39dc;
+    $col5: #570dc8;
+    $col6: #9e4efc;
+    $col7: #fdb125;
+    $col8: #fcb100;
+    $back1: #150035;
+    $back2: #0b001b;
+    /*==============================
+      ===Variables Css Ends===
+================================*/
+    
+    @mixin grad1 {
+        background: linear-gradient( rgba($col4, 0.9) 0%, rgba($col3, 0.9) 100%);
+    }
+    
+    @mixin grad2 {
+        background: linear-gradient( rgba($col6, 0.9) 0%, rgba($col5, 0.9) 100%);
+    }
+    
+    @mixin grad3 {
+        background: linear-gradient(rgba($col7, 0.9), ($col8, 0.9));
+    }
+    
+    @mixin grad4 {
+        background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @mixin grad5 {
+        background: linear-gradient( rgba($col5, 0.9) 0%, rgba($col6, 0.9) 100%);
+    }
+    
+    @mixin overlay {
+        background: rgba(21, 0, 53, 0.85);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    
+    @mixin preg {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+    }
+    
+    @mixin psbold {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+    }
+    
+    @mixin pbold {
+        font-family: 'Nunito', sans-serif;
+        font-family: 700;
+    }
+    
+    @mixin hreg {
+        font-family: 'Anton', sans-serif;
+        font-weight: 400;
+    }
+    
+    @mixin transi1 {
+        transition: all linear 0.2s;
+    }
+    
+    @mixin transi2 {
+        transition: all linear 0.3s;
+    }
+    
+    @mixin transi3 {
+        transition: all linear 0.4s;
+    }
+    
+    @mixin transi4 {
+        transition: all linear 0.5s;
+    }
+    
+    @mixin shadow1 {
+        text-shadow: rgba(255, 0, 228, .30) 2px -3px 120px;
+    }
+    
+    @mixin textb {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    @mixin heading {
+        header {
+            .hadeing-text {
+                h2 {
+                    @include hreg();
+                    font-size: 48px;
+                    @include grad4();
+                    @include shadow1();
+                }
+            }
+        }
+    }
+    /*==============================
+      ===Mixin Css Ends===
+================================*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    .container {
+        width: 1920px;
+    }
+    /*==============================
+      ===Navbar Css Starts===
+================================*/
+    
+    .navbar {
+        background: $back1 !important;
+        .navbar-collapse {
+            padding-top: 45px;
+            padding-left: 82px;
+            & ul li:nth-of-type(5) {
+                margin-right: 100px;
+            }
+            & ul li:nth-of-type(6),
+            ul li:nth-of-type(7) {
+                text-transform: capitalize;
+            }
+            & ul li:nth-of-type(6) {
+                margin-right: 20px;
+            }
+            .nav-item {
+                margin-right: 44px;
+                .nav-link {
+                    @include preg();
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $col2;
+                    &:hover {
+                        color: $col1;
+                        @include transi2();
+                    }
+                    &:focus {
+                        color: #f1f1f1;
+                    }
+                }
+                .active {
+                    color: $col1;
+                }
+                .btn {
+                    @include hreg();
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    outline: none !important;
+                    color: #ffff;
+                }
+                .btn1 {
+                    @include grad1();
+                    &:hover {
+                        color: $col1;
+                        background: #f1f1f1;
+                        @include transi2();
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 .25rem rgba(214, 60, 186, .25) !important;
+                    }
+                }
+                .btn2 {
+                    @include grad2();
+                    &:hover {
+                        color: $col2;
+                        background: #f1f1f1;
+                        @include transi2();
+                    }
+                    &:focus {
+                        box-shadow: 0 0 0 .25rem rgba(148, 75, 255, .25) !important;
+                    }
+                }
+            }
+        }
+    }
+    /*==============================
+      ===Navbar Css Ends===
+================================*/
+    
+    #home {
+        background: $back1;
+        .fadeimg {
+            margin-left: -182px;
+            top: 30px;
+        }
+        .banner-text {
+            color: #f1f1f1;
+            padding-top: 157px;
+            position: relative;
+            p {
+                @include preg();
+            }
+            h1 {
+                @include hreg();
+                @include grad4();
+                font-size: 331px;
+                @include shadow1();
+            }
+            .p1 {
+                font-size: 20px;
+                position: absolute;
+                top: 170px;
+                left: 83px;
+            }
+            .p2 {
+                position: absolute;
+                bottom: -35px;
+                font-size: 16px;
+                padding: 0 91px !important;
+            }
+            .btn {
+                position: absolute;
+                bottom: -120px;
+                @include hreg();
+                margin-top: 35px;
+                font-size: 24px;
+                padding: 10px 26px;
+                transform: translateX(-50%);
+                @include grad2();
+                text-shadow: 4px 3px 0 #5813b8;
+                color: #f1f1f1;
+                &:hover {
+                    color: $col5;
+                    background: #f1f1f1;
+                    @include transi2();
+                    text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px;
+                }
+            }
+        }
+    }
+    /*================================
+      ===Banner Section Css Ends===
+=====================================*/
+    
+    .funfact-item {
+        margin-bottom: -99px;
+        margin-top: 110px;
+        .funfact-text {
+            width: 435px !important;
+            filter: drop-shadow(0px 6px 0px rgba(63, 52, 78, 0.548));
+            box-shadow: inset 5px -5px 17px rgba(63, 52, 78, 0.548);
+            background: #570dc8;
+            cursor: pointer;
+            .countp {
+                padding-top: 24px;
+                @include hreg();
+                font-size: 50px;
+                @include grad4();
+            }
+            h4 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                @include hreg();
+                font-size: 32px;
+            }
+            .textp {
+                @include preg();
+                font-size: 16px;
+                padding-bottom: 40px;
+            }
+            &:hover {
+                transform: translateY(-3%) scale(1.04);
+                @include transi1();
+            }
+        }
+    }
+    /*=====================================
+      ===Funfact Section Css Ends===
+=======================================*/
+    
+    #Features {
+        background: $back2;
+        padding-top: 170px;
+        @include heading();
+        .gameitem {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+        figure {
+            width: 370px;
+            position: relative;
+            overflow: hidden;
+            .overlay {
+                @include overlay();
+                top: 0;
+                left: -100%;
+                z-index: 1;
+                h4,
+                a {
+                    @include hreg();
+                    font-size: 24px;
+                }
+                a {
+                    @include grad2();
+                    color: #f1f1f1;
+                    padding: 5px 10px;
+                    text-shadow: 4px 3px 0 #5813b8;
+                    margin-top: 40px;
+                    &:hover {
+                        color: $col5;
+                        background: #f1f1f1;
+                        @include transi2();
+                        text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px;
+                    }
+                }
+            }
+            &:hover {
+                .overlay {
+                    left: 0%;
+                    @include transi2();
+                }
+            }
+            &:hover {
+                img {
+                    transform: scale(1.05);
+                    @include transi1();
+                }
+            }
+            &:hover {
+                filter: drop-shadow(15px 15px 5px rgba(250, 170, 242, 0.075));
+                @include transi2();
+            }
+        }
+    }
+    /*=====================================
+      ===Features Section Css Ends===
+=======================================*/
+    
+    #unlock-feature {
+        background: $back1;
+        padding-bottom: 100px;
+        .unlock-img {
+            padding-top: 100px;
+            position: relative;
+            .pos-img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+            .pos-img2 {
+                position: absolute;
+                bottom: -70px;
+                left: -80px;
+                z-index: 1;
+            }
+        }
+        .unlock-text {
+            margin-top: 180px;
+            @include heading();
+            p {
+                padding-right: 64px;
+            }
+            .fp {
+                padding-top: 58px;
+                padding-right: 64px;
+                padding-bottom: 10px;
+            }
+            .btn {
+                padding: 6px 15px;
+                @include grad2();
+                @include hreg();
+                color: #f1f1f1;
+                font-size: 24px;
+                &:hover {
+                    color: $col5;
+                    background: #f1f1f1;
+                    @include transi2();
+                    text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px;
+                }
+            }
+        }
+    }
+    /*=============================================
+      ===Unlock Features Section Css Ends===
+===============================================*/
+    
+    #pricing {
+        background: $back2;
+        padding-bottom: 85px;
+        padding-top: 97px;
+        @include heading();
+        header {
+            padding-bottom: 90px;
+        }
+        .card-item {
+            @include grad2();
+            position: relative;
+            h3 {
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                -webkit-box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                -moz-box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                // transform: translateY(-35px);
+                // visibility: hidden;
+                // opacity: 1;
+                display: none;
+                @include transi3();
+                @include grad1();
+            }
+            h2 {
+                @include hreg();
+                font-size: 32px;
+                padding-bottom: 15px;
+                padding-top: 60px;
+                text-shadow: 2px 4px 0px #5813b8;
+            }
+            h1 {
+                @include pbold();
+                font-size: 50px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background: rgba(11, 0, 27, 0.25);
+                    bottom: -39px;
+                    left: 0;
+                }
+            }
+            h6 {
+                @include preg();
+                font-size: 14px;
+            }
+            ul {
+                padding-top: 40px !important;
+            }
+            ul li {
+                @include psbold();
+                padding-bottom: 15px !important;
+            }
+            ul li:last-of-type {
+                padding-bottom: 50px !important;
+            }
+            .btn {
+                position: absolute;
+                bottom: -27px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: -15px 15px;
+                @include grad2();
+                @include hreg();
+                color: #f1f1f1;
+                font-size: 24px;
+                box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+                -webkit-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+                -moz-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+            }
+            &:hover {
+                // transform: translateY(-25px);
+                transform: scale(1.08);
+                @include transi3();
+            }
+            &:hover {
+                h3 {
+                    display: block;
+                }
+            }
+        }
+        /*.card-item {
+            &:hover {
+                .top-title {
+                    @include transi3();
+                    transform: translateY(-35px);
+                    visibility: visible;
+                    opacity: 1;
+                    @include transi3();
+                }
+                .card {
+                    .card-body {
+                        .btn {
+                            background: linear-gradient( rgba($col4, 0.9) 0%, rgba($col3, 0.9) 100%);
+                            box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                            -webkit-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                            -moz-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                        }
+                    }
+                }
+            }
+            .top-title {
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                width: 100%;
+                visibility: hidden;
+                opacity: 0;
+                margin: -2px;
+                @include grad1();
+                @include psbold();
+                color: #f1f1f1;
+                box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                -webkit-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                -moz-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+            }
+            .card {
+                @include grad2();
+                .card-body {
+                    position: relative;
+                }
+                .card-title {
+                    @include hreg();
+                    font-size: 32px;
+                    padding-bottom: 15px;
+                    padding-top: 60px;
+                    text-shadow: 2px 4px 0px #5813b8;
+                }
+                h1 {
+                    @include pbold();
+                    font-size: 50px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        width: 100%;
+                        background: rgba(11, 0, 27, 0.25);
+                        bottom: -39px;
+                        left: 0;
+                    }
+                }
+                h6 {
+                    @include preg();
+                    font-size: 14px;
+                }
+                ul {
+                    padding-top: 40px !important;
+                }
+                ul li {
+                    @include psbold();
+                    padding-bottom: 15px !important;
+                }
+                ul li:last-of-type {
+                    padding-bottom: 30px !important;
+                }
+                .btn {
+                    position: absolute;
+                    bottom: -27px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: -15px 15px;
+                    @include grad2();
+                    @include hreg();
+                    color: #f1f1f1;
+                    font-size: 24px;
+                    box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+                    -webkit-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+                    -moz-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+                }
+                &:hover {
+                    transform: translateY(-25px);
+                    @include transi3();
+                }
+            }
+        }*/
+    }
+    /*=============================================
+      ===Pricing Section Css Ends===
+===============================================*/
+    
+    #FAQ {
+        background: $back1;
+        @include heading();
+        padding-bottom: 200px;
+        header {
+            padding-top: 98px;
+            padding-bottom: 35px;
+            position: relative;
+            &::after {
+                content: ' ';
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                background: #000000;
+            }
+        }
+        .Faq-text {
+            .dropdown {
+                .ziehharmonika {
+                    h3 {
+                        @include preg();
+                        font-size: 20px;
+                        background: none;
+                        width: 670px;
+                        span {
+                            float: right;
+                            i {
+                                font-size: 20px;
+                                &:hover {
+                                    @include grad4();
+                                }
+                            }
+                        }
+                        margin-bottom: 20px;
+                    }
+                    div {
+                        width: 670px;
+                        background: none;
+                        display: none;
+                        border-color: $col8;
+                        color: #f1f1f1;
+                        padding: 10px;
+                        @include preg();
+                        font-size: 16px;
+                        p {
+                            padding-right: 32px;
+                        }
+                    }
+                }
+            }
+        }
+        .faq-tournament {
+            .counthown-title {
+                h4 {
+                    @include psbold();
+                    font-size: 20px;
+                    margin-top: 25px;
+                }
+            }
+            #countdown {
+                margin-left: 47px;
+                #days {
+                    display: none;
+                }
+                #hours,
+                #minutes,
+                #seconds {
+                    margin-left: 30px;
+                    border: 1px solid $col7;
+                    border-radius: 5px;
+                    width: 80px;
+                    height: 70px;
+                    .wrapper {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        flex-direction: column;
+                        padding-top: 5px;
+                        span {
+                            @include psbold();
+                            font-size: 20px;
+                            color: $col7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*=============================================
+      ===FAQ Section Css Ends===
+===============================================*/

@@ -1,0 +1,559 @@
+    /*
+1.Import Fonts Css
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+*/
+    /*==============================
+   ===Css Table of Content===
+================================*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;600;700&display=swap");
+    /*===============================
+    ===Import Fonts Css Ends===
+=================================*/
+    /*==============================
+      ===Variables Css Ends===
+================================*/
+    /*==============================
+      ===Mixin Css Ends===
+================================*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+.container {
+  width: 1920px; }
+
+    /*==============================
+      ===Navbar Css Starts===
+================================*/
+.navbar {
+  background: #150035 !important; }
+  .navbar .navbar-collapse {
+    padding-top: 45px;
+    padding-left: 82px; }
+    .navbar .navbar-collapse ul li:nth-of-type(5) {
+      margin-right: 100px; }
+    .navbar .navbar-collapse ul li:nth-of-type(6),
+    .navbar .navbar-collapse ul li:nth-of-type(7) {
+      text-transform: capitalize; }
+    .navbar .navbar-collapse ul li:nth-of-type(6) {
+      margin-right: 20px; }
+    .navbar .navbar-collapse .nav-item {
+      margin-right: 44px; }
+      .navbar .navbar-collapse .nav-item .nav-link {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-weight: 600;
+        font-size: 20px;
+        color: #944bff; }
+        .navbar .navbar-collapse .nav-item .nav-link:hover {
+          color: #ff39dc;
+          transition: all linear 0.3s; }
+        .navbar .navbar-collapse .nav-item .nav-link:focus {
+          color: #f1f1f1; }
+      .navbar .navbar-collapse .nav-item .active {
+        color: #ff39dc; }
+      .navbar .navbar-collapse .nav-item .btn {
+        font-family: 'Anton', sans-serif;
+        font-weight: 400;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: none !important;
+        color: #ffff; }
+      .navbar .navbar-collapse .nav-item .btn1 {
+        background: linear-gradient(rgba(255, 57, 220, 0.9) 0%, rgba(166, 0, 132, 0.9) 100%); }
+        .navbar .navbar-collapse .nav-item .btn1:hover {
+          color: #ff39dc;
+          background: #f1f1f1;
+          transition: all linear 0.3s; }
+        .navbar .navbar-collapse .nav-item .btn1:focus {
+          box-shadow: 0 0 0 0.25rem rgba(214, 60, 186, 0.25) !important; }
+      .navbar .navbar-collapse .nav-item .btn2 {
+        background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%); }
+        .navbar .navbar-collapse .nav-item .btn2:hover {
+          color: #944bff;
+          background: #f1f1f1;
+          transition: all linear 0.3s; }
+        .navbar .navbar-collapse .nav-item .btn2:focus {
+          box-shadow: 0 0 0 0.25rem rgba(148, 75, 255, 0.25) !important; }
+
+    /*==============================
+      ===Navbar Css Ends===
+================================*/
+#home {
+  background: #150035; }
+  #home .fadeimg {
+    margin-left: -182px;
+    top: 30px; }
+  #home .banner-text {
+    color: #f1f1f1;
+    padding-top: 157px;
+    position: relative; }
+    #home .banner-text p {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400; }
+    #home .banner-text h1 {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 331px;
+      text-shadow: rgba(255, 0, 228, 0.3) 2px -3px 120px; }
+    #home .banner-text .p1 {
+      font-size: 20px;
+      position: absolute;
+      top: 170px;
+      left: 83px; }
+    #home .banner-text .p2 {
+      position: absolute;
+      bottom: -35px;
+      font-size: 16px;
+      padding: 0 91px !important; }
+    #home .banner-text .btn {
+      position: absolute;
+      bottom: -120px;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      margin-top: 35px;
+      font-size: 24px;
+      padding: 10px 26px;
+      transform: translateX(-50%);
+      background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%);
+      text-shadow: 4px 3px 0 #5813b8;
+      color: #f1f1f1; }
+      #home .banner-text .btn:hover {
+        color: #570dc8;
+        background: #f1f1f1;
+        transition: all linear 0.3s;
+        text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px; }
+
+    /*================================
+      ===Banner Section Css Ends===
+=====================================*/
+.funfact-item {
+  margin-bottom: -99px;
+  margin-top: 110px; }
+  .funfact-item .funfact-text {
+    width: 435px !important;
+    filter: drop-shadow(0px 6px 0px rgba(63, 52, 78, 0.548));
+    box-shadow: inset 5px -5px 17px rgba(63, 52, 78, 0.548);
+    background: #570dc8;
+    cursor: pointer; }
+    .funfact-item .funfact-text .countp {
+      padding-top: 24px;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 50px;
+      background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .funfact-item .funfact-text h4 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 32px; }
+    .funfact-item .funfact-text .textp {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      padding-bottom: 40px; }
+    .funfact-item .funfact-text:hover {
+      transform: translateY(-3%) scale(1.04);
+      transition: all linear 0.2s; }
+
+    /*=====================================
+      ===Funfact Section Css Ends===
+=======================================*/
+#Features {
+  background: #0b001b;
+  padding-top: 170px; }
+  #Features header .hadeing-text h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(255, 0, 228, 0.3) 2px -3px 120px; }
+  #Features .gameitem {
+    padding-top: 60px;
+    padding-bottom: 80px; }
+  #Features figure {
+    width: 370px;
+    position: relative;
+    overflow: hidden; }
+    #Features figure .overlay {
+      background: rgba(21, 0, 53, 0.85);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      z-index: 1; }
+      #Features figure .overlay h4,
+      #Features figure .overlay a {
+        font-family: 'Anton', sans-serif;
+        font-weight: 400;
+        font-size: 24px; }
+      #Features figure .overlay a {
+        background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%);
+        color: #f1f1f1;
+        padding: 5px 10px;
+        text-shadow: 4px 3px 0 #5813b8;
+        margin-top: 40px; }
+        #Features figure .overlay a:hover {
+          color: #570dc8;
+          background: #f1f1f1;
+          transition: all linear 0.3s;
+          text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px; }
+    #Features figure:hover .overlay {
+      left: 0%;
+      transition: all linear 0.3s; }
+    #Features figure:hover img {
+      transform: scale(1.05);
+      transition: all linear 0.2s; }
+    #Features figure:hover {
+      filter: drop-shadow(15px 15px 5px rgba(250, 170, 242, 0.075));
+      transition: all linear 0.3s; }
+
+    /*=====================================
+      ===Features Section Css Ends===
+=======================================*/
+#unlock-feature {
+  background: #150035;
+  padding-bottom: 100px; }
+  #unlock-feature .unlock-img {
+    padding-top: 100px;
+    position: relative; }
+    #unlock-feature .unlock-img .pos-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2; }
+    #unlock-feature .unlock-img .pos-img2 {
+      position: absolute;
+      bottom: -70px;
+      left: -80px;
+      z-index: 1; }
+  #unlock-feature .unlock-text {
+    margin-top: 180px; }
+    #unlock-feature .unlock-text header .hadeing-text h2 {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 48px;
+      background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: rgba(255, 0, 228, 0.3) 2px -3px 120px; }
+    #unlock-feature .unlock-text p {
+      padding-right: 64px; }
+    #unlock-feature .unlock-text .fp {
+      padding-top: 58px;
+      padding-right: 64px;
+      padding-bottom: 10px; }
+    #unlock-feature .unlock-text .btn {
+      padding: 6px 15px;
+      background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%);
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      color: #f1f1f1;
+      font-size: 24px; }
+      #unlock-feature .unlock-text .btn:hover {
+        color: #570dc8;
+        background: #f1f1f1;
+        transition: all linear 0.3s;
+        text-shadow: rgba(255, 0, 230, 0.075) 2px -3px 120px; }
+
+    /*=============================================
+      ===Unlock Features Section Css Ends===
+===============================================*/
+#pricing {
+  background: #0b001b;
+  padding-bottom: 85px;
+  padding-top: 97px;
+  /*.card-item {
+      &:hover {
+          .top-title {
+              @include transi3();
+              transform: translateY(-35px);
+              visibility: visible;
+              opacity: 1;
+              @include transi3();
+          }
+          .card {
+              .card-body {
+                  .btn {
+                      background: linear-gradient( rgba($col4, 0.9) 0%, rgba($col3, 0.9) 100%);
+                      box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                      -webkit-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                      -moz-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+                  }
+              }
+          }
+      }
+      .top-title {
+          font-size: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          visibility: hidden;
+          opacity: 0;
+          margin: -2px;
+          @include grad1();
+          @include psbold();
+          color: #f1f1f1;
+          box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+          -webkit-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+          -moz-box-shadow: -1px 11px 0px -2px rgba(166, 0, 133, 0.637);
+      }
+      .card {
+          @include grad2();
+          .card-body {
+              position: relative;
+          }
+          .card-title {
+              @include hreg();
+              font-size: 32px;
+              padding-bottom: 15px;
+              padding-top: 60px;
+              text-shadow: 2px 4px 0px #5813b8;
+          }
+          h1 {
+              @include pbold();
+              font-size: 50px;
+              position: relative;
+              &::after {
+                  content: '';
+                  position: absolute;
+                  height: 1px;
+                  width: 100%;
+                  background: rgba(11, 0, 27, 0.25);
+                  bottom: -39px;
+                  left: 0;
+              }
+          }
+          h6 {
+              @include preg();
+              font-size: 14px;
+          }
+          ul {
+              padding-top: 40px !important;
+          }
+          ul li {
+              @include psbold();
+              padding-bottom: 15px !important;
+          }
+          ul li:last-of-type {
+              padding-bottom: 30px !important;
+          }
+          .btn {
+              position: absolute;
+              bottom: -27px;
+              left: 50%;
+              transform: translateX(-50%);
+              padding: -15px 15px;
+              @include grad2();
+              @include hreg();
+              color: #f1f1f1;
+              font-size: 24px;
+              box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+              -webkit-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+              -moz-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+          }
+          &:hover {
+              transform: translateY(-25px);
+              @include transi3();
+          }
+      }
+  }*/ }
+  #pricing header .hadeing-text h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(255, 0, 228, 0.3) 2px -3px 120px; }
+  #pricing header {
+    padding-bottom: 90px; }
+  #pricing .card-item {
+    background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%);
+    position: relative; }
+    #pricing .card-item h3 {
+      font-size: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+      -webkit-box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+      -moz-box-shadow: 0px 11px 0px -2px rgba(166, 0, 133, 0.637);
+      display: none;
+      transition: all linear 0.4s;
+      background: linear-gradient(rgba(255, 57, 220, 0.9) 0%, rgba(166, 0, 132, 0.9) 100%); }
+    #pricing .card-item h2 {
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      padding-bottom: 15px;
+      padding-top: 60px;
+      text-shadow: 2px 4px 0px #5813b8; }
+    #pricing .card-item h1 {
+      font-family: 'Nunito', sans-serif;
+      font-family: 700;
+      font-size: 50px;
+      position: relative; }
+      #pricing .card-item h1::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: rgba(11, 0, 27, 0.25);
+        bottom: -39px;
+        left: 0; }
+    #pricing .card-item h6 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
+    #pricing .card-item ul {
+      padding-top: 40px !important; }
+    #pricing .card-item ul li {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 600;
+      padding-bottom: 15px !important; }
+    #pricing .card-item ul li:last-of-type {
+      padding-bottom: 50px !important; }
+    #pricing .card-item .btn {
+      position: absolute;
+      bottom: -27px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: -15px 15px;
+      background: linear-gradient(rgba(158, 78, 252, 0.9) 0%, rgba(87, 13, 200, 0.9) 100%);
+      font-family: 'Anton', sans-serif;
+      font-weight: 400;
+      color: #f1f1f1;
+      font-size: 24px;
+      box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+      -webkit-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294);
+      -moz-box-shadow: -1px 11px 0px -1px rgba(88, 13, 200, 0.294); }
+    #pricing .card-item:hover {
+      transform: scale(1.08);
+      transition: all linear 0.4s; }
+    #pricing .card-item:hover h3 {
+      display: block; }
+
+    /*=============================================
+      ===Pricing Section Css Ends===
+===============================================*/
+#FAQ {
+  background: #150035;
+  padding-bottom: 200px; }
+  #FAQ header .hadeing-text h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(255, 0, 228, 0.3) 2px -3px 120px; }
+  #FAQ header {
+    padding-top: 98px;
+    padding-bottom: 35px;
+    position: relative; }
+    #FAQ header::after {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background: #000000; }
+  #FAQ .Faq-text .dropdown .ziehharmonika h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background: none;
+    width: 670px;
+    margin-bottom: 20px; }
+    #FAQ .Faq-text .dropdown .ziehharmonika h3 span {
+      float: right; }
+      #FAQ .Faq-text .dropdown .ziehharmonika h3 span i {
+        font-size: 20px; }
+        #FAQ .Faq-text .dropdown .ziehharmonika h3 span i:hover {
+          background: -webkit-linear-gradient(#fdb125 0%, #fcb100 51%, #e07e1e 54%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+  #FAQ .Faq-text .dropdown .ziehharmonika div {
+    width: 670px;
+    background: none;
+    display: none;
+    border-color: #fcb100;
+    color: #f1f1f1;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px; }
+    #FAQ .Faq-text .dropdown .ziehharmonika div p {
+      padding-right: 32px; }
+  #FAQ .faq-tournament .counthown-title h4 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px; }
+  #FAQ .faq-tournament #countdown {
+    margin-left: 47px; }
+    #FAQ .faq-tournament #countdown #days {
+      display: none; }
+    #FAQ .faq-tournament #countdown #hours,
+    #FAQ .faq-tournament #countdown #minutes,
+    #FAQ .faq-tournament #countdown #seconds {
+      margin-left: 30px;
+      border: 1px solid #fdb125;
+      border-radius: 5px;
+      width: 80px;
+      height: 70px; }
+      #FAQ .faq-tournament #countdown #hours .wrapper,
+      #FAQ .faq-tournament #countdown #minutes .wrapper,
+      #FAQ .faq-tournament #countdown #seconds .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        padding-top: 5px; }
+        #FAQ .faq-tournament #countdown #hours .wrapper span,
+        #FAQ .faq-tournament #countdown #minutes .wrapper span,
+        #FAQ .faq-tournament #countdown #seconds .wrapper span {
+          font-family: 'Nunito', sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          color: #fdb125; }
+
+    /*=============================================
+      ===FAQ Section Css Ends===
+===============================================*/
+
+/*# sourceMappingURL=style.css.map */
